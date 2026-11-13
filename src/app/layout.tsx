@@ -19,11 +19,11 @@ const SITE = 'https://rajivagarwal.vercel.app';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title: {
-    default: 'Rajiv Agarwal — Full-stack + AI Engineer',
+    default: 'Rajiv Agarwal — Software Engineer | Machine Learning',
     template: '%s — Rajiv Agarwal',
   },
   description:
-    'Rajiv Agarwal — Full-stack + AI, not AI on top of full-stack. COO @ ONJI · ML Intern @ FlyRank AI. React, Next.js, FastAPI, RAG, custom CNNs, Transformers from scratch — 29 shipped projects, every one live.',
+    'Rajiv Agarwal — software engineer who builds machine learning into shipped products. COO @ ONJI. 15+ live deployments across reinforcement learning, computer vision, RAG and anomaly detection, built with React, Next.js, FastAPI and PyTorch.',
   keywords: [
     'Rajiv Agarwal',
     'Full-stack engineer',
@@ -44,16 +44,16 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: SITE,
-    title: 'Rajiv Agarwal — Full-stack + AI Engineer',
+    title: 'Rajiv Agarwal — Software Engineer | Machine Learning',
     description:
-      'Full-stack + AI, not AI on top of full-stack. 29 shipped projects, every one live.',
+      'Full-stack + AI, not AI on top of full-stack. 15+ live deployments.',
     siteName: 'Rajiv Agarwal',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Rajiv Agarwal — Full-stack + AI Engineer',
+    title: 'Rajiv Agarwal — Software Engineer | Machine Learning',
     description:
-      'Full-stack + AI, not AI on top of full-stack. 29 shipped projects, every one live.',
+      'Full-stack + AI, not AI on top of full-stack. 15+ live deployments.',
   },
   robots: {
     index: true,
@@ -72,14 +72,14 @@ export default function RootLayout({
     '@type': 'Person',
     name: 'Rajiv Agarwal',
     url: SITE,
-    jobTitle: 'Full-stack + AI Engineer',
+    jobTitle: 'Software Engineer',
     worksFor: { '@type': 'Organization', name: 'ONJI' },
     alumniOf: {
       '@type': 'CollegeOrUniversity',
       name: 'Fr. C. Rodrigues Institute of Technology',
     },
     sameAs: [
-      'https://github.com/workspace220106',
+      'https://github.com/rajivagarwal221',
       'https://www.linkedin.com/in/rajiv-agarwal221/',
     ],
     email: 'mailto:workspace220106@gmail.com',

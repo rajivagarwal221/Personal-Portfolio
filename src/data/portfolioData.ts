@@ -24,10 +24,10 @@ export interface Stat {
 }
 
 export const stats: Stat[] = [
-  { label: 'ROLES HELD', value: '10 ACROSS 7 ORGS' },
-  { label: 'PROJECTS SHIPPED', value: '29 REPOS' },
+  { label: 'ROLES HELD', value: '10 ACROSS 8 ORGS' },
+  { label: 'PROJECTS SHIPPED', value: '15+ LIVE' },
   { label: 'ON-TIME DELIVERY', value: '90%+ SPRINTS' },
-  { label: 'PAGE LOAD', value: '−69% ONJI' },
+  { label: 'PAGE LOAD', value: '−40% ONJI' },
 ];
 
 export const experiences: Experience[] = [
@@ -37,15 +37,15 @@ export const experiences: Experience[] = [
     date: 'AUG 2026 — PRESENT · REMOTE',
     icon: 'rocket_launch',
     align: 'right',
-    description: 'Driving 90%+ on-time sprint delivery across a distributed eng team; grew engineering headcount by 3.'
+    description: 'Lead delivery for an 8-person engineering team at 90%+ on-time sprints and run technical hiring; hired 3 engineers. Built the intern management portal on Next.js 14 and Firebase.'
   },
   {
     title: 'Machine Learning Intern',
     company: '@ FLYRANK AI',
-    date: 'JUL 2026 — PRESENT · 4 MOS · REMOTE',
+    date: 'JUL 2026 — SEP 2026 · REMOTE',
     icon: 'psychology',
     align: 'left',
-    description: 'ML systems and AI agents — prompt engineering and search intelligence optimization for organic growth.'
+    description: 'Built and evaluated LLM agent workflows for search-intelligence products — prompt design, retrieval tuning and evaluation.'
   },
   {
     title: 'Program Committee Head',
@@ -58,10 +58,10 @@ export const experiences: Experience[] = [
   {
     title: 'Jt. Technical Head',
     company: '@ AI & DEEP LEARNING CLUB, FCRIT',
-    date: 'JUL 2026 — PRESENT · ON-SITE',
+    date: 'JUN 2026 — PRESENT · ON-SITE',
     icon: 'network_intelligence',
     align: 'left',
-    description: 'Co-leading technical programming for the AI & Deep Learning student club.'
+    description: 'Co-leading technical programming for the AI & Deep Learning student club. Built the website for Hack on Track 2026, a 24-hour national hackathon.'
   },
   {
     title: 'Full-stack Developer (Intern)',
@@ -69,19 +69,19 @@ export const experiences: Experience[] = [
     date: 'JUN 2026 — JUL 2026 · 2 MOS',
     icon: 'developer_mode',
     align: 'right',
-    description: 'Built the student portal core (auth, enrollment, attendance) in React + Next.js — ~30% faster page response, weekly releases, zero critical regressions.'
+    description: 'Built the student and parent portal for 200+ students as sole developer on a Node.js/Express API — auth, enrollment, attendance, feedback and Razorpay checkout. ~30% faster page response, weekly releases, zero critical regressions.'
   },
   {
     title: 'Scrum Master',
     company: '@ ONJI',
-    date: 'JAN 2026 — SEP 2026 · REMOTE',
+    date: 'DEC 2025 — SEP 2026 · REMOTE',
     icon: 'groups',
     align: 'left',
     description: 'End-to-end technical recruitment, standups, sprint planning, retrospectives. KPI tracking and structured feedback for a distributed eng team.'
   },
   {
     title: 'AI Intern',
-    company: '@ INTERACTO AI',
+    company: '@ INTERACTO AI SOLUTIONS',
     date: 'DEC 2025 — FEB 2026 · 3 MOS · PUNE',
     icon: 'smart_toy',
     align: 'right',
@@ -98,15 +98,15 @@ export const experiences: Experience[] = [
   {
     title: 'Web Developer (Intern)',
     company: '@ ONJI',
-    date: 'JAN 2025 — AUG 2025 · 8 MOS · REMOTE',
+    date: 'MAY 2025 — AUG 2025 · 4 MOS · REMOTE',
     icon: 'code',
     align: 'right',
-    description: 'Built responsive React interfaces (+22% mobile engagement). API integration + code-splitting dropped page load −69%. Figma handoff workflow cut design→dev time −35%.'
+    description: 'Built responsive React interfaces (+22% mobile engagement). Lazy loading + code-splitting cut page load −40%. Figma handoff workflow cut design→dev time −35%.'
   },
   {
     title: 'Finance & Sponsorship Head',
     company: '@ AGNEL CYBER CELL',
-    date: 'JAN 2025 — JUN 2026 · 1 YR 6 MOS · ON-SITE',
+    date: 'JUN 2025 — JUN 2026 · 1 YR 1 MO · ON-SITE',
     icon: 'account_balance',
     align: 'left',
     description: 'Owned sponsorship outreach and finance for the student cybersecurity cell.'
@@ -118,12 +118,22 @@ export const projects: Project[] = [
   {
     name: 'TRADELINE',
     type: 'FORENSICS / 3D',
-    desc: 'Air-gapped Bitcoin forensics — Three.js 3D entity graph + Isolation Forest anomaly detection. SIH-grade investigative tool.',
+    desc: 'Air-gapped Bitcoin forensics workstation, built solo for a Smart India Hackathon problem — a 120-tree Isolation Forest and 6 behavioral detectors in pure TypeScript, rendered as a WebGL 3D entity graph with zero outbound network calls.',
     img: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1600&q=80&auto=format&fit=crop',
     link: 'https://tradeline-psi.vercel.app/',
     align: 'start',
     featured: true,
-    tags: ['Three.js', 'Isolation Forest', 'Python', 'React', 'Air-gapped']
+    tags: ['TypeScript', 'React', 'Three.js', 'Isolation Forest', 'Air-gapped']
+  },
+  {
+    name: 'Rocket-Land',
+    type: 'DEEP RL',
+    desc: 'Self-landing rocket trained with deep RL — a 17-stage PPO curriculum, then SAC. 97% precise and 98.5% safe landings under sensor noise, observation delay, actuator lag and variable gravity. 2-person team.',
+    img: '/rocket-land.jpg',
+    link: 'https://github.com/rajivagarwal221/Rocket-Land',
+    align: 'end',
+    featured: true,
+    tags: ['PyTorch', 'Stable-Baselines3', 'PPO → SAC', 'Blender']
   },
 
   // ─── TIER 1: ON-SITE, KEEP + IMPROVE ─────────────────────────────────────
@@ -138,19 +148,19 @@ export const projects: Project[] = [
     tags: ['Next.js', 'Gemini AI', 'PWA', 'Gamification']
   },
   {
-    name: 'Yojana Sarthi',
-    type: 'AI / RAG',
-    desc: 'AI Citizen Scheme Portal — discover, compare, and verify eligibility for Indian govt schemes. FastAPI + RAG + FAISS + Gemini + React.',
+    name: 'Nagrik Sahayata / Yojana-Sarthi',
+    type: 'CIVIC / RAG',
+    desc: 'Civic platform in English, Hindi and Marathi — photo and location complaint filing, status tracking, a staff triage queue, and a RAG scheme finder with source-cited eligibility answers over 85 Maharashtra schemes.',
     img: '/yojana-sarthi.png',
-    link: 'https://yojana-sarthi-sand.vercel.app/',
+    link: 'https://citizen-app-xi.vercel.app/',
     align: 'start',
     featured: true,
-    tags: ['FastAPI', 'RAG', 'FAISS', 'Gemini', 'React']
+    tags: ['React', 'Supabase', 'FastAPI', 'FAISS', 'Gemini']
   },
   {
     name: 'Aakash Enterprises',
     type: 'ERP',
-    desc: 'Enterprise inventory + resource management. Most-iterated codebase — 85 commits, 8 Postgres tables. Automated data pipelines drove a 15% boost in sales efficiency.',
+    desc: 'Sales and inventory platform that replaced a business\'s spreadsheet workflow. Most-iterated codebase — 85 commits, 8 normalized Postgres tables, an OpenAPI spec that generates typed React Query hooks.',
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCCjTwbWGqamPAgaAeMlOumlU6TFBZRx-eH4zyGwW2j8M_HjqRBCcWjdfW2icWyy5FvmqT3pyp29c2JaxAVy1JG-okZQ-8js4U9IKydVHU6MzG-BdwBHpg_UIFXJP--K6PgozqOMtXATt4Bg80YulDpFbQHXTt-slk2l2UeEV89v13RJI0B1b_sXwtMrQY6ZGfSq0gxMuQfUVa6ny7Pg2Eo10hmUDA_Of57ecaZ-4KcFOA8Q5KWVv6TlgcAAjVCt_zKK78wzwY23z4',
     link: 'https://aakash-enterprises-frontend.vercel.app/',
     align: 'end',
@@ -170,7 +180,7 @@ export const projects: Project[] = [
   {
     name: 'Vocalize (ASL)',
     type: 'CV / CNN',
-    desc: '29-class ASL sign recognition — custom CNN hitting 94%+ accuracy, sub-50ms inference, multi-language translation layer.',
+    desc: '29-class ASL sign recognition — CNN at 94%+ validation accuracy and under 50 ms per frame with MediaPipe hand landmarks, running in-browser on TensorFlow.js with a sentence-building chatbot.',
     img: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1600&q=80&auto=format&fit=crop',
     link: 'https://asl-sign-recognition-alpha.vercel.app/',
     align: 'end',
@@ -186,13 +196,13 @@ export const projects: Project[] = [
     tags: ['IoT', 'Agriculture', 'Sensors']
   },
   {
-    name: 'Aahar Kitchen',
-    type: 'SAAS',
-    desc: 'Kitchen / restaurant management SaaS — orders, inventory, and operations in one place.',
+    name: 'AHAAR',
+    type: 'CV / FOOD',
+    desc: 'Fridge-to-recipe food assistant — a YOLOv11 ingredient detector trained on a 218-class Indian food manifest (0.96 validation mAP50), served by FastAPI behind an 8-page React app. 3-person academic project.',
     img: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1600&q=80&auto=format&fit=crop',
     link: 'https://aahar-six.vercel.app/',
     align: 'end',
-    tags: ['SaaS', 'Operations', 'React']
+    tags: ['YOLOv11', 'FastAPI', 'React', 'TypeScript']
   },
 
   // ─── TIER 3: AI / AGENTS — "AI engineer" narrative ──────────────────────
@@ -201,7 +211,7 @@ export const projects: Project[] = [
     type: 'AI AGENTS',
     desc: 'Multi-agent AI dev system targeted at above-average PCs. Companion to the FlyRank AI role.',
     img: 'https://images.unsplash.com/photo-1555255707-c07966088b7b?w=1600&q=80&auto=format&fit=crop',
-    link: 'https://github.com/workspace220106/Jarvis-ai',
+    link: 'https://github.com/rajivagarwal221/Jarvis-ai',
     align: 'start',
     tags: ['Multi-agent', 'LLM', 'Local']
   },
@@ -210,9 +220,9 @@ export const projects: Project[] = [
     type: 'ML FUNDAMENTALS',
     desc: 'Transformer architecture implemented from scratch — not an API wrapper, actual ML fundamentals. Great AI/ML credibility signal.',
     img: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1600&q=80&auto=format&fit=crop',
-    link: 'https://github.com/workspace220106/Attention-Is-All-You-Need-Implementation',
+    link: 'https://github.com/rajivagarwal221/Attention-Is-All-You-Need-Implementation',
     align: 'end',
-    tags: ['Transformer', 'From scratch', 'PyTorch']
+    tags: ['Transformer', 'From scratch', 'NumPy']
   },
 ];
 
@@ -222,21 +232,22 @@ export const techStack: string[] = [
   // Backend
   'NODE.JS', 'EXPRESS', 'FASTAPI', 'FLASK', 'PYTHON',
   // Data
-  'POSTGRESQL', 'FIREBASE',
+  'POSTGRESQL', 'SUPABASE', 'FIREBASE',
   // ML / AI
-  'TENSORFLOW', 'KERAS', 'SCIKIT-LEARN', 'OPENCV', 'MEDIAPIPE',
-  'GEMINI API', 'FAISS', 'RAG',
+  'PYTORCH', 'TENSORFLOW', 'KERAS', 'YOLO', 'STABLE-BASELINES3',
+  'SCIKIT-LEARN', 'OPENCV', 'MEDIAPIPE',
+  'GEMINI API', 'FAISS', 'RAG', 'LANGGRAPH',
   // 3D / mobile
   'THREE.JS', 'FLUTTER', 'DART', 'PWA',
   // Workflow
-  'FIGMA', 'GIT', 'VERCEL', 'POWER BI', 'BLADE / PHP', 'AGILE',
+  'DOCKER', 'FIGMA', 'GIT', 'VERCEL', 'POWER BI', 'BLADE / PHP', 'AGILE',
 ];
 
 export const narrativePillars = {
   tagline: 'Full-stack + AI, not AI on top of full-stack.',
   threads: [
-    'Shipping cadence > perfection — 29 repos, most deployed live, sub-month build-ship cycles.',
-    'Range — web, mobile, ML research, agents, IoT, forensics, PWA.',
+    'Shipping cadence > perfection — 15+ live deployments, sub-month build-ship cycles.',
+    'Range — web, mobile, reinforcement learning, computer vision, RAG, agents, forensics.',
     'From-scratch literacy — Transformer impl + CNN from scratch, not just an API-glue dev.',
   ],
 };

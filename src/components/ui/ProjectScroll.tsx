@@ -59,7 +59,7 @@ export default function ProjectScroll({ projects }: ProjectScrollProps) {
             <div className="border-l-4 border-primary pl-6">
               <h2 className="font-headline-md text-headline-md text-fade-dark font-bold mb-1">PROJECTS</h2>
               <p className="font-label-caps text-label-caps text-on-surface-variant tracking-widest">
-                SCROLL · EVERY ONE LIVE, NOT JUST SOURCE
+                SCROLL · LIVE DEMOS AND SOURCE
               </p>
             </div>
             <div className="hidden md:flex items-center gap-2 font-label-caps text-[10px] tracking-[0.3em] text-on-surface-variant/60">
@@ -155,6 +155,10 @@ function ProjectCard({
     return `drop-shadow(${off}px 0 0 rgba(255,0,96,0.35)) drop-shadow(${-off}px 0 0 rgba(0,220,255,0.3))`;
   });
 
+  // Three projects link to a repository, not a deployment, so the button says so.
+  const isRepo = project.link.includes('github.com');
+  const linkLabel = isRepo ? 'VIEW SOURCE' : 'VIEW LIVE';
+
   return (
     <motion.div
       style={{
@@ -168,7 +172,8 @@ function ProjectCard({
       className="relative shrink-0 w-[85vw] md:w-[720px] max-w-[760px] will-change-transform"
     >
       {/* Card frame */}
-      <div className="relative aspect-video w-full overflow-hidden glass-card border border-white/10 group">
+      {/* Taller on phones: at 16:9 an 85vw card is ~170px high, which cut off the title and description. */}
+      <div className="relative aspect-[2/3] md:aspect-video w-full overflow-hidden glass-card border border-white/10 group">
         <motion.img
           alt={project.name}
           src={project.img}
@@ -229,11 +234,11 @@ function ProjectCard({
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            data-cursor="VIEW LIVE"
-            aria-label={`Open ${project.name} live demo`}
+            data-cursor={linkLabel}
+            aria-label={`Open ${project.name} ${isRepo ? 'source code' : 'live demo'}`}
             className="inline-flex items-center gap-2 self-start mt-2 font-label-caps text-[10px] tracking-[0.2em] text-primary hover:text-white transition-colors border-b border-primary/40 pb-1 focus-visible:outline focus-visible:outline-primary focus-visible:outline-offset-4"
           >
-            VIEW LIVE
+            {linkLabel}
             <span className="material-symbols-outlined text-[14px]">open_in_new</span>
           </a>
         </div>

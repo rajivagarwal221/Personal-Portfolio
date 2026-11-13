@@ -82,9 +82,9 @@ export default function ContactSection() {
               {
                 label: 'SOURCE / 02',
                 title: 'GITHUB',
-                url: 'https://github.com/workspace220106',
+                url: 'https://github.com/rajivagarwal221',
                 icon: 'code',
-                sub: 'github.com/workspace220106',
+                sub: 'github.com/rajivagarwal221',
               },
               {
                 label: 'DIRECT / 03',

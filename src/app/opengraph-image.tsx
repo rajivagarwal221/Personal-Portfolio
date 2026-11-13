@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'Rajiv Agarwal — Full-stack + AI Engineer';
+export const alt = 'Rajiv Agarwal — Software Engineer | Machine Learning';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -81,7 +81,7 @@ export default async function OGImage() {
           }}
         >
           <div>Full-stack + AI, not AI on top of full-stack</div>
-          <div>29 shipped projects · every one live</div>
+          <div>15+ live deployments</div>
         </div>
       </div>
     ),

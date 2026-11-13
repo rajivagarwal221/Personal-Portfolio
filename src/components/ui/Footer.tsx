@@ -8,7 +8,7 @@ export default function Footer() {
       label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/rajiv-agarwal221/',
     },
-    { label: 'GitHub', href: 'https://github.com/workspace220106' },
+    { label: 'GitHub', href: 'https://github.com/rajivagarwal221' },
     { label: 'Email', href: 'mailto:workspace220106@gmail.com' },
   ];
 

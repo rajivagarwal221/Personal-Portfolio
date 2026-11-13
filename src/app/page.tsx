@@ -149,7 +149,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="mb-16 text-center">
               <h2 className="font-label-caps text-label-caps text-primary mb-4 uppercase tracking-[0.3em]">Work Experience</h2>
-              <p className="text-on-surface-variant max-w-xl mx-auto">10 roles across 7 organizations — operator, engineer, builder.</p>
+              <p className="text-on-surface-variant max-w-xl mx-auto">10 roles across 8 organizations — operator, engineer, builder.</p>
               <div className="h-px w-24 bg-primary/40 mx-auto mt-6" />
             </div>
             <div className="relative flex flex-col items-center">
@@ -175,7 +175,7 @@ export default function Home() {
             <div className="md:w-2/3">
               {[
                 { id: '01', title: 'Full-Stack Product', desc: 'React / Next.js on the frontend, Node, Express, FastAPI and Flask on the backend. Postgres schemas, Firebase, Vercel edge deployments — the whole surface, one brain.' },
-                { id: '02', title: 'Applied AI & Agents', desc: 'Custom CNNs, Transformer-from-scratch impl, RAG pipelines with FAISS + Gemini, multi-agent dev systems. ML fundamentals, not just API-glue.' },
+                { id: '02', title: 'Applied AI & Agents', desc: 'Deep RL (PPO → SAC), YOLO detection, custom CNNs, Transformer-from-scratch impl, RAG pipelines with FAISS + Gemini, multi-agent dev systems. ML fundamentals, not just API-glue.' },
                 { id: '03', title: 'Range Across Domains', desc: 'Web, mobile (Flutter/Dart), IoT, BTC forensics with Three.js, PWA, Blade/PHP, Power BI — few students touch all these. I ship across all of them.' },
                 { id: '04', title: 'Operator & Agile Leader', desc: 'COO at ONJI driving 90%+ on-time sprints and 3 new eng hires. Scrum Master handling standups, planning, retros, and technical interviewing for a distributed team.' },
               ].map((cap, i) => (
